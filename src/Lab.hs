@@ -17,12 +17,12 @@ import Prelude hiding (not, and, max)
 -- 0. Define `age` to be your age.
 
 age :: Integer
-age = 28
+age = 20
 
 -- 1. Define `name` to be your name.
 
 name :: String
-name = "Michael"
+name = "Miki"
 
 -- 2. Modify the definition of `triple` so that it triples its argument.
 
@@ -34,7 +34,7 @@ triple = \x -> x * 3
 -- lambda terms instead.
 
 tripleV2 :: Num a => a -> a
-tripleV2 x = x * 3
+tripleV2 = (* 3)
 
 -- 4. Replace `undefined` in the definition of `not` below to implement
 -- boolean negation.
@@ -85,9 +85,9 @@ perimeterRect l w = 2*l + 2*w
 -- => min (4*2 + 8*2) (perimeterRect 10 2)
 -- => min (8+16) (perimeterRect 10 2)
 -- => min 24 (perimeterRect 10 2)
--- => min 24 (10*2 + 2*2) 
--- => min 24 (20 + 2*2) 
--- => min 24 (20 + 4) 
+-- => min 24 (10*2 + 2*2)
+-- => min 24 (20 + 2*2)
+-- => min 24 (20 + 4)
 -- => min 24 24
 -- => if 24 > 24 then 24 else 24
 -- => if False then 24 else 24
